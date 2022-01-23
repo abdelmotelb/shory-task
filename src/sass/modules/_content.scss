@@ -13,10 +13,10 @@
     label {
       font-size: 24px;
       margin: 0 0 20px;
-      font-family: 'Noto Serif', serif;
+      font-family: $main-font;
       font-weight: 700;
       line-height: 1.2;
-      color: #222;
+      color: $dark-color;
     }
 
     .shory_btn-custom {
@@ -34,7 +34,7 @@
     border-radius: 0;
     border: 1px solid #ebebeb;
     width: 100%;
-    color: #7a7a7a;
+    color: $main-color;
     background-color: #fff;
     letter-spacing: 0.1px;
     font-size: 15px;

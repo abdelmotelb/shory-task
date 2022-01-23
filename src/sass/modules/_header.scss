@@ -126,7 +126,7 @@
   }
 
   &.secondary {
-    background-color: #222222;
+    background-color: $dark-color;
 
     &:hover {
       background-color: #000000;
@@ -211,7 +211,7 @@
 
 
 .shory_header-bottom {
-  background-color: #222222;
+  background-color: $dark-color;
   @include media-breakpoint-down(lg) {
     display: none;
   }
@@ -282,7 +282,7 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  color: #222;
+  color: $dark-color;
   font-weight: 700;
   border-bottom: 1px solid rgba(0, 0, 0, .1);
 
