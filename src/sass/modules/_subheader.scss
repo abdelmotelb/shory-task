@@ -1,4 +1,4 @@
-.metro_subheader {
+.subheader {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -19,7 +19,7 @@
     transition: background-color .3s;
   }
 
-  .metro_subheader-inner {
+  .shory_subheader-inner {
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -27,7 +27,9 @@
     padding: 120px 0;
     z-index: 99;
     position: relative;
-
+    @include media-breakpoint-down(md) {
+      padding: 50px 0;
+    }
   }
 
   h1 {
@@ -35,6 +37,16 @@
     line-height: 1.2;
     margin: 0;
     color: #fff;
+    text-align: center;
+    @include media-breakpoint-down(lg){
+      font-size: 60px;
+    }
+    @include media-breakpoint-down(md) {
+      font-size: 40px;
+    }
+    @include media-breakpoint-down(sm) {
+      font-size: 30px;
+    }
   }
 
   .breadcrumb {

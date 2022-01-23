@@ -1,109 +1,129 @@
-.section {
+.section-content {
   position: relative;
   padding: 80px 0;
-}
-
-.metro_recipe-submit-section {
-  padding: 30px 30px 10px;
-  border: 2px solid #ebebeb;
-  margin-top: 50px;
-
-
-  label {
-    font-size: 24px;
-    margin: 0 0 20px;
-    font-family: 'Noto Serif', serif;
-    font-weight: 700;
-    line-height: 1.2;
-    color: #222;
+  @include media-breakpoint-down(lg) {
+    padding: 40px 0;
   }
-  .metro_btn-custom{
-    border-radius: 0;
+
+  .shory_recipe-submit-section {
+    padding: 30px 30px 10px;
+    border: 2px solid #ebebeb;
+    margin-top: 50px;
+
+    label {
+      font-size: 24px;
+      margin: 0 0 20px;
+      font-family: 'Noto Serif', serif;
+      font-weight: 700;
+      line-height: 1.2;
+      color: #222;
+    }
+
+    .shory_btn-custom {
+      border-radius: 0;
+    }
   }
-}
 
-.border-0 {
-  border: 0;
-}
-
-
-.form-control {
-  height: 60px;
-  padding: 8px 20px;
-  border-radius: 0;
-  border: 1px solid #ebebeb;
-  width: 100%;
-  color: #7a7a7a;
-  background-color: #fff;
-  letter-spacing: 0.1px;
-  font-size: 15px;
-  font-family: $secondary-font;
-  position: relative;
-
-
-}
-select.form-control{
-  background-image: url("../images/down_arrow_icon.svg");
-  background-repeat: no-repeat;
-  background-position: 97% center;
-  background-size: 25px;
-}
-textarea.form-control {
-  height: auto;
-}
-.form-group {
-  margin-bottom: 20px;
-}
-
-
-.metro_input-upload {
-  position: relative;
-  max-width: 250px;
-  label{
-    width: 100%;
-    cursor: pointer;
-    display: block;
-    text-align: center;
-    white-space: nowrap;
-    background-color: $secondary-color;
+  .border-0 {
     border: 0;
-    color: #fff;
-    font-size: 16px;
-    font-weight: 400;
-    padding: 12px 30px;
-    transition: 0.3s;
-    border-radius: 5px;
-    z-index: 1;
-    box-shadow: 0 3px 24px rgb(0 0 0 / 10%);
-    font-family: $secondary-font;
   }
-  input{
+
+  .form-control {
+    height: 60px;
+    padding: 8px 20px;
+    border-radius: 0;
+    border: 1px solid #ebebeb;
     width: 100%;
+    color: #7a7a7a;
+    background-color: #fff;
+    letter-spacing: 0.1px;
+    font-size: 15px;
+    font-family: $secondary-font;
+    position: relative;
   }
-}
-.metro_input-upload input[type="file"] {
-  position: absolute;
-  left: 0;
-  top: 0;
-  opacity: 0;
-  z-index: 4;
-  height: 100%;
-  cursor: pointer;
-}
-.uploaded-img{
-  ul{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
+
+  select.form-control {
+    background-image: url("../images/down_arrow_icon.svg");
+    background-repeat: no-repeat;
+    background-position: 97% center;
+    background-size: 25px;
+  }
+
+  textarea.form-control {
+    height: auto;
+  }
+
+  .form-group {
     margin-bottom: 20px;
-    li{
-      background-color: #939393;
-      height: 170px;
+  }
+
+  .shory_input-upload {
+    position: relative;
+    max-width: 250px;
+
+    label {
       width: 100%;
-      margin-right: 10px;
-      &:last-child{
-        margin-right: 0;
+      cursor: pointer;
+      display: block;
+      text-align: center;
+      white-space: nowrap;
+      background-color: $secondary-color;
+      border: 0;
+      color: #fff;
+      font-size: 16px;
+      font-weight: 400;
+      padding: 12px 30px;
+      transition: 0.3s;
+      border-radius: 5px;
+      z-index: 1;
+      box-shadow: 0 3px 24px rgb(0 0 0 / 10%);
+      font-family: $secondary-font;
+    }
+
+    input {
+      width: 100%;
+    }
+  }
+
+  .shory_input-upload input[type="file"] {
+    position: absolute;
+    left: 0;
+    top: 0;
+    opacity: 0;
+    z-index: 4;
+    height: 100%;
+    cursor: pointer;
+  }
+
+  .uploaded-img {
+    ul {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-between;
+      margin-bottom: 20px;
+      @include media-breakpoint-down(lg) {
+        flex-wrap: wrap;
+      }
+
+      li {
+        background-color: #939393;
+        height: 170px;
+        width: 100%;
+        margin-right: 10px;
+
+        &:last-child {
+          margin-right: 0;
+        }
+
+        @include media-breakpoint-down(lg) {
+          width: 47%;
+          height: 120px;
+          margin-bottom: 10px;
+          &:last-child {
+            margin-right: 10px;
+          }
+        }
       }
     }
   }

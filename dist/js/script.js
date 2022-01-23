@@ -4,12 +4,12 @@
 
 
     $(".aside-trigger-left").on('click', function () {
-        $(".metro_aside-left").toggleClass('open');
+        $(".shory_aside-left").toggleClass('open');
     });
 
     $(".aside-trigger-right").on('click', function () {
 
-        $(".metro_aside-left").toggleClass('open');
+        $(".shory_aside-left").toggleClass('open');
 
     });
 
