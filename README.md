@@ -1,17 +1,14 @@
-# Customized-demo template bootstrapV4 beta-sass - OWl-carousel 2 & Custom fonts
+# Shory Task  template bootstrapV5 sass - Html & Custom fonts
 
-Simple demo of customizing `BootstrapV4 beta` adn OWl-Carousel using `Gulp`.
+Simple demo of customizing `Bootstrap V5`  using `PrePros` for Compiling Sass .
 
 ## Usage
-
-1. Check out or download this demo project.
-2. Run command in your terminal:
+1. Download Prepros From https://prepros.io/
+2. Check out or download this Shory Task project.
+3. configure project with Prepros
 
 ```
-$ git clone https://github.com/abdelmotelb/demo-pro
-$ cd demo-pro
-$ npm install
-$ gulp
+$ git clone https://github.com/abdelmotelb/shory-task.git
 ```
 
 Then you can see the customized result by opening `index.html` in your browser.
